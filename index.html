@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    width: 100%;
+    overflow: hidden;
+  }
+  /* body::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url('images/bg-pattern-top.svg');
+    background-size: cover;
+    background-position: center;
+
+  }
+  body::after{
+    content: '';
+    position: absolute;
+    background-image: url('images/bg-pattern-bottom.svg');
+  } */
+  .container{
+    max-width: 23rem;
+
+    position: relative;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.card{
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+ .head{
+   /* 150px */
+  height: 9.37rem;
+  background-image: url('images/bg-pattern-card.svg');
+  background-position: center;
+  background-size: cover;
+
+
+}
+.body{
+  min-height: 9.37rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+.pimg{
+  border-radius: 50%;
+  border: 5px solid #fff;
+  width: 7rem;
+  margin-top: -50px;
+  display: inline-block;
+}
+.nameContainer{
+  padding: 1.7rem 0;
+}
+.nameContainer h1{
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-bottom: .7rem;
+}
+.nameContainer span{
+  font-weight: normal;
+  color: hsl(0, 0%, 59%)
+}
+.nameContainer p{
+  font-size: .9rem;
+  color: hsl(0, 0%, 59%);
+  font-weight: normal;
+}
+.footer{
+  border-top: 1px solid hsl(0, 0%, 75%);
+  min-height: 5.37rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer .statscontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.statscontainer p{
+  margin-top: .5rem;
+  color: hsl(0, 0%, 59%);
+  font-weight: normal;
+}
+
+.top{
+  position: absolute;
+
+  right: 50%;
+  bottom: 35%;
+}
+.bottom{
+  position: absolute;
+  left: 50%;
+  top: 48%;
+}
+
+    .attribution { font-size: 13px; text-align: center; margin-top: 3rem;}
+    .attribution a {
+      /* color: hsl(228, 45%, 44%);  */
+      color: rgba(255,255,255,0.75);
+    }
+  </style>
+</head>
+<body>
+<img src="images/bg-pattern-top.svg" alt="" class="top">
+<img src="images/bg-pattern-bottom.svg" alt="" class="bottom">
+  <div class="container">
+    <div class="card">
+      <div class="head"></div>
+      <div class="body">
+        <img class="pimg" src="images/image-victor.jpg" alt="">
+
+        <div class="nameContainer">
+          <h1>victor Crest <span>26</span>  </h1>
+          <p>London</p>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="statscontainer">
+          <h4>83k</h4>
+          <p>Followers</p>
+        </div>
+        <div class="statscontainer">
+          <h4>803k</h4>
+          <p>Likes</p>
+        </div>
+        <div class="statscontainer">
+          <h4>1.4k</h4>
+          <p>Photos</p>
+        </div>
+      </div>
+    </div>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/uzairkk1">Muhammad Uzair</a>.
+  </div
+
+  </div>
+
+</body>
+</html>
